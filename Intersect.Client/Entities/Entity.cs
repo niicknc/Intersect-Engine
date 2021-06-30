@@ -271,6 +271,8 @@ namespace Intersect.Client.Entities
                         return Options.Instance.Sprites.AttackFrames;
                     case SpriteAnimations.Shoot:
                         return Options.Instance.Sprites.ShootFrames;
+                    case SpriteAnimations.Shoot2:
+                        return Options.Instance.Sprites.ShootFrames;
                     case SpriteAnimations.Cast:
                         return Options.Instance.Sprites.CastFrames;
                     case SpriteAnimations.Weapon:
@@ -1806,6 +1808,10 @@ namespace Intersect.Client.Entities
                             {
                                 SpriteAnimation = SpriteAnimations.Shoot;
                             }
+                            if (AnimatedTextures[SpriteAnimations.Shoot2] != null && item.ProjectileId != Guid.Empty)
+                            {
+                                SpriteAnimation = SpriteAnimations.Shoot2;
+                            }
                         }
                     }
                 }
@@ -1832,6 +1838,12 @@ namespace Intersect.Client.Entities
                         spell.Combat.TargetType == SpellTargetTypes.Projectile && AnimatedTextures[SpriteAnimations.Shoot] != null)
                     {
                         SpriteAnimation = SpriteAnimations.Shoot;
+                    }
+
+                    if (spell.SpellType == SpellTypes.CombatSpell &&
+                        spell.Combat.TargetType == SpellTargetTypes.Projectile && AnimatedTextures[SpriteAnimations.Shoot2] != null)
+                    {
+                        SpriteAnimation = SpriteAnimations.Shoot2;
                     }
 
                     SpriteFrame = (int)Math.Floor((timeIn / (duration / (float)SpriteFrames)));

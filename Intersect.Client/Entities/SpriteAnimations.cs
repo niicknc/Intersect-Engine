@@ -6,6 +6,7 @@
         Idle,
         Attack,
         Shoot,
+        Shoot2,
         Cast,
         Weapon,
     }
