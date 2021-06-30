@@ -202,6 +202,16 @@ namespace Intersect.Client.Core
                                     case Control.Hotkey8:
                                     case Control.Hotkey9:
                                     case Control.Hotkey0:
+                                    case Control.Hotkey11:
+                                    case Control.Hotkey12:
+                                    case Control.Hotkey13:
+                                    case Control.Hotkey14:
+                                    case Control.Hotkey15:
+                                    case Control.Hotkey16:
+                                    case Control.Hotkey17:
+                                    case Control.Hotkey18:
+                                    case Control.Hotkey19:
+                                    case Control.Hotkey20:
                                         break;
 
                                     case Control.OpenInventory:

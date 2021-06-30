@@ -296,7 +296,7 @@ namespace Intersect
         // TODO: Clean these up
         //Values that cannot easily be changed:
 
-        public const int MaxHotbar = 10;
+        public const int MaxHotbar = 20;
 
         public const string DEFAULT_GAME_NAME = "Intersect";
 

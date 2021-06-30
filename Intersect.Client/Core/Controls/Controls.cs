@@ -73,6 +73,16 @@ namespace Intersect.Client.Core.Controls
             CreateControlMap(Control.Hotkey8, Keys.D8, Keys.None);
             CreateControlMap(Control.Hotkey9, Keys.D9, Keys.None);
             CreateControlMap(Control.Hotkey0, Keys.D0, Keys.None);
+            CreateControlMap(Control.Hotkey11, Keys.F1, Keys.None);
+            CreateControlMap(Control.Hotkey12, Keys.F2, Keys.None);
+            CreateControlMap(Control.Hotkey13, Keys.F3, Keys.None);
+            CreateControlMap(Control.Hotkey14, Keys.F4, Keys.None);
+            CreateControlMap(Control.Hotkey15, Keys.F5, Keys.None);
+            CreateControlMap(Control.Hotkey16, Keys.F6, Keys.None);
+            CreateControlMap(Control.Hotkey17, Keys.F7, Keys.None);
+            CreateControlMap(Control.Hotkey18, Keys.F8, Keys.None);
+            CreateControlMap(Control.Hotkey19, Keys.F9, Keys.None);
+            CreateControlMap(Control.Hotkey20, Keys.F10, Keys.None);
             CreateControlMap(Control.Screenshot, Keys.F12, Keys.None);
             CreateControlMap(Control.OpenMenu, Keys.Escape, Keys.None);
             CreateControlMap(Control.OpenInventory, Keys.I, Keys.None);
@@ -83,7 +93,7 @@ namespace Intersect.Client.Core.Controls
             CreateControlMap(Control.OpenFriends, Keys.F, Keys.None);
             CreateControlMap(Control.OpenGuild, Keys.G, Keys.None);
             CreateControlMap(Control.OpenSettings, Keys.None, Keys.None);
-            CreateControlMap(Control.OpenDebugger, Keys.F2, Keys.None);
+            CreateControlMap(Control.OpenDebugger, Keys.Home, Keys.None);
             CreateControlMap(Control.OpenAdminPanel, Keys.Insert, Keys.None);
             CreateControlMap(Control.ToggleGui, Keys.F11, Keys.None);
         }
