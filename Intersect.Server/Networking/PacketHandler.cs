@@ -1219,10 +1219,11 @@ namespace Intersect.Server.Networking
                                     ChatMessageType.Inventory, CustomColors.NoAmmo);
                             }
 #endif
+                        byte z = (byte)(player.Y - 1);
                         MapInstance.Get(player.MapId)
                             .SpawnMapProjectile(
                                 player, projectileBase, null, weaponItem, player.MapId,
-                                (byte)player.X, (byte)player.Y, (byte)player.Z,
+                                (byte)player.X, z, (byte)player.Z,
                                 (byte)player.Dir, null
                             );
 

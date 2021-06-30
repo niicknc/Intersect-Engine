@@ -161,7 +161,7 @@ namespace Intersect.Client.Entities.Projectiles
                         {
                             var s = new ProjectileSpawns(
                                 FindProjectileRotationDir(Dir, d), X + FindProjectileRotationX(Dir, x - 2, y - 2),
-                                Y + FindProjectileRotationY(Dir, x - 2, y - 2), Z, CurrentMap, animBase,
+                                Y - 1 + FindProjectileRotationY(Dir, x - 2, y - 2), Z, CurrentMap, animBase,
                                 mMyBase.Animations[spawn].AutoRotate, mMyBase, this
                             );
 
